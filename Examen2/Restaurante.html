@@ -1,0 +1,252 @@
+<script>
+
+    alert("Bienvenido a Montecarlo");
+    pr=prompt("Desea hacer una reservacion o mostrar reservaciones");
+
+    switch (pr) 
+    {
+        case "reservacion":
+       let Reservar= reservacion();
+       console.log(Reservar);
+
+            
+            break;
+
+        case "no":
+
+        Adios();
+
+            break;
+
+        case"mostrar reservaciones":
+
+        reservaciones();
+        
+        break;
+
+    }
+
+
+    function reservacion(Texto) {
+       let  RegistrodeNombre =prompt("Reservacion a nombre De:");
+       let  RegistrodeFecha=prompt("Fecha:");
+       let  Estatus=prompt("Estado"+registro());
+
+       let Reserva
+       ={
+       Reservecion_a_nombre_de: RegistrodeNombre,
+       Fecha: RegistrodeFecha,
+       Estatus,
+        
+    }
+    return Reserva;
+    }
+
+    function registro(Texto) {
+    
+    pr=prompt("Selecciona una mesa");
+
+    switch (pr) {
+        case "mesa 1":
+        
+        alert("Disponible");
+
+        mesa1();
+
+        let Rese= mesa1();
+        console.log(Rese);
+
+        alert("! Se hizo la reservacion con exito !");
+
+
+        break;
+    
+        case"mesa 2":
+        
+        alert("No Disponible");
+
+        alert("! No se hizo la reservacion !");
+
+        Adios();
+
+            break;
+        
+        case "mesa 3":
+
+
+        alert("Disponible");
+
+         mesa3();
+
+        let Re= mesa3();
+        console.log(Re);
+
+        alert("! Se hizo la reservacion con exito !");
+           
+            break;
+    
+        case"mesa 4":
+                    
+        alert("No Disponible");
+
+        alert("No Disponible");
+
+        alert("! No se hizo la reservacion !");
+
+        Adios();
+
+            break;
+        
+        case "mesa 5":
+        
+        alert("No Disponible");
+
+        alert("No Disponible");
+
+        alert("! No se hizo la reservacion !");
+
+        Adios();
+
+            break;
+    
+        case"mesa 6":
+        alert("Disponible");
+
+        mesa6();
+
+        let Res= mesa6();
+        console.log(Res);
+
+alert("! Se hizo la reservacion con exito !");
+                    
+        alert("Disponible");
+
+            break;
+        
+    }
+
+    function mesa1(texto) {
+
+       let  Personas=prompt("¿Cuantas personas estaran en la mesa?");
+
+
+       let Reserva
+       ={
+       
+       Numero_de_Personas: Personas,
+
+        
+    }
+    return Reserva;
+    }
+
+    function mesa3(texto) {
+
+    let  Personas=prompt("¿Cuantas personas estaran en la mesa?");
+
+
+    let Reserva
+    ={
+
+    Numero_de_Personas: Personas,
+
+ 
+    }
+    return Reserva;
+    }
+    function mesa6(texto) {
+
+    let  Personas=prompt("¿Cuantas personas estaran en la mesa?");
+
+
+    let Reserva
+    ={
+
+    Numero_de_Personas: Personas,
+
+ 
+    }
+    return Reserva;
+    }
+
+
+    }
+        
+    function reservaciones(texto) {
+
+        var pr=prompt("Elige un mesa:")
+ 
+ switch (pr) {
+        case "mesa 1" :
+
+                alert("Disponible")
+
+                break;
+
+            
+        case "mesa 2":
+
+            alert("Reservada")
+
+        let mesa2={
+                     "Nombre de quien esta le reservacion":"Angel",
+                     "Cantidad de platillos":"Postre",
+                     "Dia de reservacion":"27/10//2021",
+              }
+        return mesa2;
+
+            break;
+
+        case "mesa 3":
+
+        alert("Disponible")
+
+        break;
+
+        case "mesa 4":
+            
+        alert("Reservada")
+
+        let mesa4={
+             "Nombre de quien esta le reservacion":"Luan",
+             "Cantidad de platillos":"Fuerte y postre",
+             "Dia de reservacion":"10/11//2021",
+             }
+
+            break;
+
+            case "mesa 5":
+
+            alert("Disponible")
+
+             break;
+
+            case "mesa 6":
+            
+            alert("Reservada")
+    
+            let mesa6={
+                 "Nombre de quien esta le reservacion":"Kayn",
+                 "Cantidad de platillos":"Entrada y Plato Fuerte",
+                 "Dia de reservacion":"18/10//2021",
+                 }
+    
+                break;
+
+
+            }
+        }
+
+    function Adios(Texto) 
+    {
+       alert("Gracias por preferirnos. Hasta pronto.");
+       window.close();
+       
+
+        
+    }
+
+
+
+
+</script>
